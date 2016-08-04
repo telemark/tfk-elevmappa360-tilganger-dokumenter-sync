@@ -1,0 +1,42 @@
+{
+  "name": "tfk-elevmappa360-brukere-sync",
+  "description": "Synkronisere tilganger på elevmapper mellom 360 og Buddy",
+  "version": "0.0.1",
+  "license": "MIT",
+  "author": {
+    "name": "Geir Gåsodden",
+    "email": "geir.gasodden@pythonia.no",
+    "url": "https://github.com/zrrrzzt"
+  },
+  "keywords": [
+    "tfk",
+    "public 360",
+    "buddy",
+    "telemark",
+    "telemark fylkeskommune"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/telemark/tfk-elevmappa360-tilganger-dokumenter-sync.git"
+  },
+  "bugs": {
+    "url": "http://github.com/telemark/tfk-elevmappa360-tilganger-dokumenter-sync/issues"
+  },
+  "homepage": "https://github.com/telemark/tfk-elevmappa360-tilganger-dokumenter-sync",
+  "engines": {
+    "node": ">=4.4.7"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "standard && nsp check && tap --reporter=spec test/*.js",
+    "coverage": "tap test/*.js --coverage",
+    "coveralls": "tap --cov --coverage-report=lcov test/*.js && cat coverage/lcov.info | coveralls",
+    "setup": "npm install && node setup.js"
+  },
+  "devDependencies": {
+    "coveralls": "2.11.12",
+    "nsp": "2.6.1",
+    "standard": "7.1.2",
+    "tap": "6.3.0"
+  }
+}
