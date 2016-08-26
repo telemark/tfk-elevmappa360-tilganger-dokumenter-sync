@@ -1,0 +1,50 @@
+[
+  {
+    "caseNumber": "172627/16",
+    "caseTitle": "Cheese is good",
+    "documentNumber":"109",
+    "officialTitle": "Cheese",
+    "accessGroup": "Elev-Skien",
+    "personalIdNumber": "10"
+  },
+  {
+    "caseNumber": "172627/16",
+    "caseTitle": "Cheese is good",
+    "documentNumber":"109",
+    "officialTitle": "Cheese",
+    "accessGroup": "RIM-elever",
+    "personalIdNumber": "10"
+  },
+  {
+    "caseNumber": "172627/16",
+    "caseTitle": "Cheese is good",
+    "documentNumber":"109",
+    "officialTitle": "Cheese",
+    "accessGroup": "PPT",
+    "personalIdNumber": "10"
+  },
+  {
+    "caseNumber": "172627/16",
+    "caseTitle": "Cheese is good",
+    "documentNumber":"109",
+    "officialTitle": "Cheese",
+    "accessGroup": "Lærlinger",
+    "personalIdNumber": "10"
+  },
+  {
+    "caseNumber": "172627/16",
+    "caseTitle": "Cheese is good",
+    "documentNumber":"109",
+    "officialTitle": "Cheese",
+    "accessGroup": "Elev-Bamble",
+    "personalIdNumber": "10"
+  },
+  {
+    "caseNumber": "172627/16",
+    "caseTitle": "Cheese is good",
+    "documentNumber":"109",
+    "officialTitle": "Cheese",
+    "accessGroup": "OT",
+    "personalIdNumber": "10"
+  }
+]
