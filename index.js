@@ -1,5 +1,7 @@
 'use strict'
 
+const schoolsInfo = require('tfk-schools-info')
+
 module.exports = options => {
   if (!options) {
     throw new Error('Missing required input: options')
@@ -17,8 +19,17 @@ module.exports = options => {
     throw new Error('Invalid format options.data must be an array')
   }
 
+  var students = {}
+  var schools = {}
   const isStudentDocument = item => item.accessGroup.startsWith('Elev')
-  const documents = options.data.filter(isStudentDocument)
+  const studentDocuments = options.data.filter(isStudentDocument)
+  options.masterdata.forEach(student => students[student.personalIdNumber] = {unitId: student.unitId, accessGroup: schools[student.unitId]})
+  schoolsInfo().forEach(school => schools[school.shortName] = school.accessGroup)
+  console.log
+  const mustChange = item => students[item.personalIdNumber] && students[item.personalIdNumber].accessGroup !== item.accessGroup
+  const docsForChange = studentDocuments.filter(mustChange)
 
-  return documents
+  const documentList = docsForChange.map(doc => {return {documentNumber: doc.documentNumber, accessGroup: students[doc.personalIdNumber].accessGroup}})
+
+  return documentList
 }
