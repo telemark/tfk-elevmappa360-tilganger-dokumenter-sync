@@ -23,13 +23,15 @@ module.exports = options => {
   var schools = {}
   const isStudentDocument = item => item.accessGroup.startsWith('Elev')
   const studentDocuments = options.data.filter(isStudentDocument)
-  options.masterdata.forEach(student => students[student.personalIdNumber] = {unitId: student.unitId, accessGroup: schools[student.unitId]})
-  schoolsInfo().forEach(school => schools[school.shortName] = school.accessGroup)
-  console.log
+  schoolsInfo().forEach(school => {
+    schools[school.shortName] = school.accessGroup
+  })
+  options.masterdata.forEach(student => {
+    students[student.personalIdNumber] = {unitId: student.unitId, accessGroup: schools[student.unitId]}
+  })
   const mustChange = item => students[item.personalIdNumber] && students[item.personalIdNumber].accessGroup !== item.accessGroup
   const docsForChange = studentDocuments.filter(mustChange)
-
-  const documentList = docsForChange.map(doc => {return {documentNumber: doc.documentNumber, accessGroup: students[doc.personalIdNumber].accessGroup}})
+  const documentList = docsForChange.map(doc => { return {documentNumber: doc.documentNumber, accessGroup: students[doc.personalIdNumber].accessGroup} })
 
   return documentList
 }
