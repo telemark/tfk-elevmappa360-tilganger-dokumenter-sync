@@ -39,7 +39,7 @@
     "coveralls": "2.11.12",
     "nsp": "2.6.1",
     "standard": "8.0.0",
-    "tap": "7.1.1"
+    "tap": "7.1.2"
   },
   "dependencies": {
     "tfk-schools-info": "1.1.0"
