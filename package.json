@@ -1,7 +1,7 @@
 {
   "name": "tfk-elevmappa360-tilganger-dokumenter-sync",
   "description": "Synkronisere tilganger på elevmapper mellom 360 og Buddy",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "license": "MIT",
   "author": {
     "name": "Geir Gåsodden",
