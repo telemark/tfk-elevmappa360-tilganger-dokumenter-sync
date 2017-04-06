@@ -36,10 +36,10 @@
     "standard-fix": "standard --fix"
   },
   "devDependencies": {
-    "coveralls": "2.11.16",
-    "nsp": "2.6.2",
+    "coveralls": "2.13.0",
+    "nsp": "2.6.1",
     "standard": "10.0.0",
-    "tap": "10.3.0"
+    "tap": "10.3.1"
   },
   "dependencies": {
     "tfk-schools-info": "1.2.2"
