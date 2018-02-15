@@ -1,9 +1,10 @@
 [![Build Status](https://travis-ci.org/telemark/tfk-elevmappa360-tilganger-dokumenter-sync.svg?branch=master)](https://travis-ci.org/telemark/tfk-elevmappa360-tilganger-dokumenter-sync)
 [![Coverage Status](https://coveralls.io/repos/telemark/tfk-elevmappa360-tilganger-dokumenter-sync/badge.svg?branch=master&service=github)](https://coveralls.io/github/telemark/tfk-elevmappa360-tilganger-dokumenter-sync?branch=master)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
+[![Greenkeeper badge](https://badges.greenkeeper.io/telemark/tfk-elevmappa360-tilganger-dokumenter-sync.svg)](https://greenkeeper.io/)
+
 # tfk-elevmappa360-tilganger-dokumenter-sync
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/telemark/tfk-elevmappa360-tilganger-dokumenter-sync.svg)](https://greenkeeper.io/)
 Synkronisering av tilganger på dokumenter fra Buddy til elevmappene i 360
 
 Hent alle elever fra Buddy
@@ -41,3 +42,7 @@ returns an array.
   { documentNumber: '115', accessGroup: 'Elev-Bamble' } 
 ]
 ```
+
+## License
+
+[MIT](LICENSE)

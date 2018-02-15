@@ -17,14 +17,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "http://github.com/telemark/tfk-elevmappa360-tilganger-dokumenter-sync.git"
+    "url": "https://github.com/telemark/tfk-elevmappa360-tilganger-dokumenter-sync.git"
   },
   "bugs": {
-    "url": "http://github.com/telemark/tfk-elevmappa360-tilganger-dokumenter-sync/issues"
+    "url": "https://github.com/telemark/tfk-elevmappa360-tilganger-dokumenter-sync/issues"
   },
-  "homepage": "https://github.com/telemark/tfk-elevmappa360-tilganger-dokumenter-sync",
+  "homepage": "https://github.com/telemark/tfk-elevmappa360-tilganger-dokumenter-sync#readme",
   "engines": {
-    "node": ">=4.6.2"
+    "node": ">=8.9.4"
   },
   "main": "index.js",
   "scripts": {
@@ -32,8 +32,8 @@
     "test-offline": "standard && tap --reporter=spec test/*.js",
     "coverage": "tap test/*.js --coverage",
     "coveralls": "tap --cov --coverage-report=lcov test/*.js && cat coverage/lcov.info | coveralls",
-    "setup": "npm install && node setup.js",
-    "standard-fix": "standard --fix"
+    "standard-fix": "standard --fix",
+    "refresh": "rm -rf node_modules && rm package-lock.json && npm install"
   },
   "devDependencies": {
     "coveralls": "3.0.0",
