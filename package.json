@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/telemark/tfk-elevmappa360-tilganger-dokumenter-sync#readme",
   "engines": {
-    "node": ">=8.9.4"
+    "node": ">=8.15.0"
   },
   "main": "index.js",
   "scripts": {
