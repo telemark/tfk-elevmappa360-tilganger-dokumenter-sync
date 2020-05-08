@@ -41,6 +41,6 @@
     "tap": "14.10.5"
   },
   "dependencies": {
-    "tfk-schools-info": "2.2.0"
+    "tfk-schools-info": "2.2.1"
   }
 }
